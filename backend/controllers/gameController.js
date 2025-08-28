@@ -4,7 +4,7 @@ const GameSession = require('../models/GameSession');
 const Scenario = require('../models/CrisisScenario');
 const aiService = require('../services/aiService');
 const User = require('../models/user');
-const Leaderboard = require('../models/leaderboard'); // ✅ import leaderboard model
+const Leaderboard = require('../models/Leaderboard'); // ✅ import leaderboard model
 
 
 // 🔧 Step 1 — Add Normalizer

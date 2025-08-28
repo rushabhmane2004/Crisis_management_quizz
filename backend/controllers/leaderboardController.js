@@ -1,6 +1,6 @@
 const User = require('../models/user');
 
-const Leaderboard = require('../models/leaderboard');
+const Leaderboard = require('../models/Leaderboard');
 
 exports.getLeaderboard = async (req, res) => {
   try {
