@@ -31,14 +31,14 @@ function PolicyPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/ai/evaluate-policy/${gameId}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-auth-token': user.token,
-        },
-        body: JSON.stringify({ policyText }),
-      });
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/ai/evaluate-policy/${gameId}`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'x-auth-token': user.token,
+  },
+  body: JSON.stringify({ policyText }),
+});
 
       // ✅ IMPROVED: Robustly handle both JSON and non-JSON error responses.
       if (!response.ok) {

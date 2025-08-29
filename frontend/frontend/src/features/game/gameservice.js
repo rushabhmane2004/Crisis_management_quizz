@@ -4,7 +4,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/games/';
+const API_URL = import.meta.env.VITE_BACKEND_URL + '/api/games/';
 
 // Start a new game
 const startGame = async (gameData, token) => {

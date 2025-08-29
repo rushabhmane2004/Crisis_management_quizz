@@ -34,10 +34,10 @@ const GameLobby = () => {
             if (!user) { navigate('/login'); return; }
             try {
                 const token = user?.token;
-                const response = await fetch('http://localhost:5000/api/scenarios', { headers: { 'x-auth-token': token } });
-                if (!response.ok) throw new Error('Failed to fetch');
-                const data = await response.json();
-                setScenarios(data);
+const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/scenarios`, { headers: { 'x-auth-token': token } });
+if (!response.ok) throw new Error('Failed to fetch');
+const data = await response.json();
+setScenarios(data);
             } catch (error) {
                 console.error("Failed to fetch scenarios:", error);
             }
