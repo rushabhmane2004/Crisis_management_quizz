@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { getGameDetails, submitDecision, reset } from '../features/game/gameSlice';
+import { getGameDetails, submitDecision, reset } from '../features/game/gameslice';
 import Spinner from '../components/Spinner';
 
 // A visual component to show progress through questions

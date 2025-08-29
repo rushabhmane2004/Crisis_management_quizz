@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Play } from 'lucide-react'; // Shield, Users, etc. removed as they are replaced by images
-import { startGame, reset } from '../features/game/gameSlice';
+import { startGame, reset } from '../features/game/gameslice';
 import Spinner from '../components/Spinner';
 
 // Import your custom icon images from the assets folder
