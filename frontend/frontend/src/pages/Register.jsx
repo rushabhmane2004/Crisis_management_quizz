@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
-import { register, reset } from '../features/auth/authSlice';
+import { register, reset } from '../features/auth/authslice';
 import Spinner from '../components/Spinner';
 import { UserPlus } from 'lucide-react';
 
