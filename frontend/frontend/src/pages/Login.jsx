@@ -9,7 +9,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
-import { login, reset } from '../features/auth/authSlice';
+import { login, reset } from '../features/auth/authslice';
 import Spinner from '../components/Spinner';
 import logo from '../assets/logo1.png';
 

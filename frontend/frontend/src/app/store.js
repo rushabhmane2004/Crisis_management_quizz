@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from '../features/auth/authSlice';
+import authReducer from '../features/auth/authslice';
 // CORRECTED: 'gameSlice' now has a capital 'S'
-import gameReducer from '../features/game/gameSlice';
+import gameReducer from '../features/game/gameslice';
 
 export const store = configureStore({
   reducer: {

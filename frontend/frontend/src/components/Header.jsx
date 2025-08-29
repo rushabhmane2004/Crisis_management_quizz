@@ -5,7 +5,7 @@
 import React from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom'; // 👈 Import useLocation
 import { useSelector, useDispatch } from 'react-redux';
-import { logout, reset } from '../features/auth/authSlice';
+import { logout, reset } from '../features/auth/authslice';
 import { LogIn, UserPlus, Play, Crown, LogOut } from 'lucide-react';
 
 const Header = () => {
